@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 
+// Heading / branding
 const spaceGrotesk = Space_Grotesk({
-  variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["600", "700"],
+  variable: "--font-heading",
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-mono",
+// Body / UI
+const inter = Inter({
   subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -24,13 +28,6 @@ export const metadata: Metadata = {
   },
   description:
     "HopShop is a multi-tenant e-commerce platform where independent sellers launch storefronts, manage products, and scale their business with a shared infrastructure.",
-  keywords: [
-    "ecommerce",
-    "multi-tenant",
-    "marketplace",
-    "online store",
-    "SaaS commerce",
-  ],
 };
 
 export default function RootLayout({
@@ -40,9 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans`}
-      >
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans`}>
         {children}
       </body>
     </html>
