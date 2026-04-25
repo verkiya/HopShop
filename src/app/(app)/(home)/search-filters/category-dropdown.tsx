@@ -3,14 +3,14 @@
 import { useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
-import { Category } from "@/payload-types";
 import { Button } from "@/components/ui/button";
 
 import { SubcategoryMenu } from "./subcategory-menu";
 import { useDropdownPosition } from "./use-dropdown-position";
+import { CustomCategory } from "../types";
 
 interface Props {
-  category: Category;
+  category: CustomCategory;
   isActive?: boolean;
   isNavigationHovered?: boolean;
 }
@@ -48,6 +48,8 @@ export const CategoryDropdown = ({
           className={cn(
             "h-11 px-4 bg-transparent border-transparent rounded-full hover:bg-white hover:border-primary text-black",
             isActive && !isNavigationHovered && "bg-white border-primary",
+            isOpen &&
+              "bg-white border-primary  shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] -translate-x-[4px]",
           )}
         >
           {category.name}
