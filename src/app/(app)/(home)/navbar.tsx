@@ -57,29 +57,29 @@ export default function Navbar() {
       <Link href="/" className="pl-6 flex items-center">
         <Image
           src="/hopshop.svg"
-          height={50}
+          height={58}
           width={50}
           alt="HopShop"
           className="-mr-1"
         />
 
         <span className="text-5xl font-heading font-bold tracking-tight leading-none select-none">
-          <span className="inline-block text-[#FF4DA6] [text-shadow:1.5px_1.5px_0px_black]">
+          <span className="inline-block text-[#F26D9A] [text-shadow:1.5px_1.5px_0px_black]">
             o
           </span>
-          <span className="inline-block text-[#FF7A00] [text-shadow:1.5px_1.5px_0px_black]">
+          <span className="inline-block text-[#F4A259] [text-shadow:1.5px_1.5px_0px_black]">
             p
           </span>
-          <span className="inline-block text-[#FFE45E] [text-shadow:1.5px_1.5px_0px_black]">
+          <span className="inline-block text-[#E9D65B] [text-shadow:1.5px_1.5px_0px_black]">
             S
           </span>
-          <span className="inline-block text-[#35D0FF] [text-shadow:1.5px_1.5px_0px_black]">
+          <span className="inline-block text-[#5BC0EB] [text-shadow:1.5px_1.5px_0px_black]">
             h
           </span>
-          <span className="inline-block text-[#35D0FF] [text-shadow:1.5px_1.5px_0px_black]">
+          <span className="inline-block text-[#74D3AE] [text-shadow:1.5px_1.5px_0px_black]">
             o
           </span>
-          <span className="inline-block text-[#9B5BFF] [text-shadow:1.5px_1.5px_0px_black]">
+          <span className="inline-block text-[#B388EB] [text-shadow:1.5px_1.5px_0px_black]">
             p
           </span>
         </span>
