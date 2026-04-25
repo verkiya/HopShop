@@ -17,10 +17,10 @@ export default function NotFound() {
       {/* CONTENT */}
       <div className="relative z-10 flex flex-col items-center text-center gap-8 border-2 border-black bg-pink-50 px-16 py-16 shadow-[10px_10px_0px_black] max-w-xl w-full">
         {/* ACCENT BAR */}
-        <div className="absolute top-0 left-0 w-full h-2 bg-pink-400 border-b-2 border-black" />
+        <div className="absolute top-0 left-0 w-full h-2 bg-pink-300 border-b-2 border-black" />
 
         {/* LABEL */}
-        <p className="text-xs tracking-widest uppercase border-2 border-black px-3 py-1 bg-pink-400">
+        <p className="text-xs tracking-widest uppercase border-2 border-black px-3 py-1 bg-pink-300">
           Error
         </p>
 
@@ -38,7 +38,7 @@ export default function NotFound() {
           <Link href="/">
             <Button
               className="border-2 border-black px-6 py-2 text-black bg-white shadow-[4px_4px_0px_black]
-          hover:bg-pink-400 hover:text-white
+          hover:bg-pink-300 hover:text-white
           hover:translate-x-[2px] hover:translate-y-[2px]
           active:translate-x-[3px] active:translate-y-[3px]
           transition-all"

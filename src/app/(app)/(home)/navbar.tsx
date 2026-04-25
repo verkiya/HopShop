@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { NavbarSidebar } from "./navbar-sidebar";
 import { MenuIcon } from "lucide-react";
-import Image from "next/image";
+import HopShopText from "./hopshop-logo-text";
 
 interface NavbarItemProps {
   href: string;
@@ -55,34 +55,7 @@ export default function Navbar() {
   return (
     <nav className="h-20 flex border-b border-black justify-between bg-white">
       <Link href="/" className="pl-6 flex items-center">
-        <Image
-          src="/hopshop.svg"
-          height={58}
-          width={50}
-          alt="HopShop"
-          className="-mr-1"
-        />
-
-        <span className="text-5xl font-heading font-bold tracking-tight leading-none select-none">
-          <span className="inline-block text-[#F26D9A] [text-shadow:1.5px_1.5px_0px_black]">
-            o
-          </span>
-          <span className="inline-block text-[#F4A259] [text-shadow:1.5px_1.5px_0px_black]">
-            p
-          </span>
-          <span className="inline-block text-[#E9D65B] [text-shadow:1.5px_1.5px_0px_black]">
-            S
-          </span>
-          <span className="inline-block text-[#5BC0EB] [text-shadow:1.5px_1.5px_0px_black]">
-            h
-          </span>
-          <span className="inline-block text-[#74D3AE] [text-shadow:1.5px_1.5px_0px_black]">
-            o
-          </span>
-          <span className="inline-block text-[#B388EB] [text-shadow:1.5px_1.5px_0px_black]">
-            p
-          </span>
-        </span>
+        <HopShopText />
       </Link>
       <NavbarSidebar
         open={isSidebarOpen}
@@ -104,16 +77,20 @@ export default function Navbar() {
         <Button
           asChild
           variant="secondary"
-          className="border-l border-t-0 border-r-0 border-b-0 px-12 h-full rounded-none bg-white hover:bg-pink-400 transition-colors text-lg"
+          className="border-l border-t-0 border-r-0 border-b-0 px-12 h-full rounded-none bg-white hover:bg-pink-300 transition-colors text-lg"
         >
-          <Link href="/sign-in"> Login</Link>
+          <Link prefetch href="/sign-in">
+            Login
+          </Link>
         </Button>
         <Button
           asChild
           variant="secondary"
-          className="border-l border-t-0 border-r-0 px-12 h-full border-b-0 rounded-none bg-black hover:text-black text-white hover:bg-pink-400 transition-colors text-lg"
+          className="border-l border-t-0 border-r-0 px-12 h-full border-b-0 rounded-none bg-black hover:text-black text-white hover:bg-pink-300 transition-colors text-lg"
         >
-          <Link href="/sign-up"> Start Selling</Link>
+          <Link prefetch href="/sign-up">
+            Start Selling
+          </Link>
         </Button>
       </div>
       <div className="flex lg:hidden items-center justify-center">
