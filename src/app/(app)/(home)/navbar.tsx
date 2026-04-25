@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { NavbarSidebar } from "./navbar-sidebar";
 import { MenuIcon } from "lucide-react";
+import Image from "next/image";
 
 interface NavbarItemProps {
   href: string;
@@ -54,8 +55,33 @@ export default function Navbar() {
   return (
     <nav className="h-20 flex border-b border-black justify-between bg-white">
       <Link href="/" className="pl-6 flex items-center">
-        <span className="text-5xl font-heading font-bold tracking-tight text-black">
-          HopShop
+        <Image
+          src="/hopshop.svg"
+          height={50}
+          width={50}
+          alt="HopShop"
+          className="-mr-1"
+        />
+
+        <span className="text-5xl font-heading font-bold tracking-tight leading-none select-none">
+          <span className="inline-block text-[#FF4DA6] [text-shadow:1.5px_1.5px_0px_black]">
+            o
+          </span>
+          <span className="inline-block text-[#FF7A00] [text-shadow:1.5px_1.5px_0px_black]">
+            p
+          </span>
+          <span className="inline-block text-[#FFE45E] [text-shadow:1.5px_1.5px_0px_black]">
+            S
+          </span>
+          <span className="inline-block text-[#35D0FF] [text-shadow:1.5px_1.5px_0px_black]">
+            h
+          </span>
+          <span className="inline-block text-[#35D0FF] [text-shadow:1.5px_1.5px_0px_black]">
+            o
+          </span>
+          <span className="inline-block text-[#9B5BFF] [text-shadow:1.5px_1.5px_0px_black]">
+            p
+          </span>
         </span>
       </Link>
       <NavbarSidebar
