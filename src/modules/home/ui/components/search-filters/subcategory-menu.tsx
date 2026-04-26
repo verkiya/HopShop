@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Category } from "@/payload-types";
-import { CustomCategory } from "../types";
+import { CustomCategory } from "../../../../../app/(app)/(home)/types";
 
 interface Props {
   category: CustomCategory;

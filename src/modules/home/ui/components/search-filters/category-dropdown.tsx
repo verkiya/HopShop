@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 import { SubcategoryMenu } from "./subcategory-menu";
 import { useDropdownPosition } from "./use-dropdown-position";
-import { CustomCategory } from "../types";
+import { CustomCategory } from "../../../../../app/(app)/(home)/types";
 import Link from "next/link";
 
 interface Props {
