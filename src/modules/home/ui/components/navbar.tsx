@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { NavbarSidebar } from "./navbar-sidebar";
 import { MenuIcon } from "lucide-react";
-import HopShopText from "./hopshop-logo-text";
+import HopShopText from "../../../../app/(app)/(home)/hopshop-logo-text";
 import { useTRPC } from "@/trpc/client";
 import { useQuery } from "@tanstack/react-query";
 

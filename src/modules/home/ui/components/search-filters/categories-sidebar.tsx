@@ -10,7 +10,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 
-import { CustomCategory } from "../types";
+import { CustomCategory } from "../../../../../app/(app)/(home)/types";
 import { useTRPC } from "@/trpc/client";
 import { useQuery } from "@tanstack/react-query";
 
